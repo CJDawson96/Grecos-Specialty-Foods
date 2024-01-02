@@ -1,321 +1,298 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Greco's Specialty Foods</title>
-<style>
-/* Style for fonts */
-@font-face {
-      	font-family: 'Circular Light';
-      	src: url('fonts/Circular/CircularStd-Light.otf') format('woff2'),
-             url('fonts/Circular/CircularStd-Light.otf') format('otf');
-}
-@font-face {
-      	font-family: 'Clarendon';
-      	src: url('fonts/Clarendon BT/ClarendonBTRoman.ttf') format('ttf');
-}
-@font-face {
-      	font-family: 'Circular Medium';
-      	src: url('fonts/Circular/CircularStd-Medium.otf') format('woff2'),
-             url('fonts/Circular/CircularStd-Medium.otf') format('otf');
-}
-body {
-	background-color: white;
-	margin: 0;
-	font-family: 'Circular Light', sans-serif;
-	line-height: 1.6;
-}
-h1 {
-color: #233A80;
-}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<title>Greco's Specialty Foods</title>
+	<style>
+		/* Style for fonts */
+		@font-face {
+            font-family: 'Circular Light';
+      			src: url('Circular/CircularStd-Light.otf') format('woff2'),
+           		url('Circular/CircularStd-Light.otf') format('otf');
+      			font-family: 'Times Now';
+      			src: url('Times Now/TimesNow-ExtraLight.woff') format('woff2');
+
+
+    		}
+		/* Style for navigation bar */
+		nav {
+    			background-color: white;
+    			overflow: hidden;
+    			display: flex;
+    			justify-content: space-between;
+    			align-items: center;
+                padding-bottom: 3vh;
+                margin-left: 12%;
+                margin-right: 12%;
+		}
+
+		nav img {
+			height: 150px;
+			margin: 0px;
+		}
+
+		nav a {
+			color: black;
+			text-align: left;
+			text-decoration: none;
+			padding-top: 7px;
+            padding-bottom: 7px;
+			padding-left: 10px;
+			padding-right: 10px;
+            
+		}
+
+		nav a:hover {
+			background-color:#E5E4E2;
+			color: black;
+		}
+
+		#nav-list {
+			margin-right: 15px;
+		}
+        #email-button {
+            background-color: #2A3566;
+            color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #offerings-link {
+			margin-left: 35px;
+		}
+		#contact-link {
+			margin-left: 35px;
+		}
+
+		#team-link {
+			margin-left: 35px;
+		}
+        
+		/* Style for banner image */
+		.banner {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			height: 300px; /* set the height of the section to a fixed value */
+		}
+		.banner img{
+			width: 100%;
+			margin-top:18%;
+		}
+        /* Style for intro section */
+		.intro {
+            width: 100%;
+            background-color: #2A3566;
+            padding-top:22.25%;
+            padding-bottom:3%;
+            color: white;
+		}
+        .intro-text {
+            padding-left: 12%;
+            padding-right: 17%;
+            color: white;
+        }
+		/* Style for content sections */
+		#content-block-1 {
+			margin-top: 5%;
+		}
+		.content-section {
+  			display: flex;
+  			justify-content: space-between;
+  			align-items: center;
+			margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 12%;
+            margin-right: 12%;
+
+		}
+        .content-header {
+            font-family: Times Now;
+            color: #2A3566;
+        }
+          .footer-header {
+            font-family: Times Now;
+            color: white;
+        }
+
+		.left-section {
+  			width: 40%;
+			padding-right: 10%;
+		}
+
+		.right-section {
+  			width: 50%;
+		}
+	
+		.right-section img {
+  			width: 100%;
+  			height: auto;
+		}
+	
+		#right-text {
+			padding-left: 3%;
+		}
+
+		#left-text-1 {
+			padding-right:13.5%;
+		}
+		.content-section h2 {
+			margin-top: 0;
+		}
+
+		.content-section .content-text {
+			width: 50%;
+			margin-right: 0px;
+		}
+        .column {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+        #footer-center-column {
+            padding-left: 2%;
+        }
+         h2 {
+            font-size: 2.75vw;
+        }
+		body {
+			background-color: white;
+			margin: 0;
+			font-family: 'Circular Light', sans-serif;
+		}
 		
-/* Style for navigation bar */
-nav {
-    	background-color: white;
-    	overflow: hidden;
-    	display: flex;
-    	justify-content: space-between;
-    	align-items: center;
-	padding-left:16%;
-	padding-right:16%;
+		footer {
+            background-color: #2A3566;
+            color: white;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            padding-left: 12%;
+            
+		}
+		#footer-text {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		#footer-logo {
+			width: 40%;
+			padding-bottom: 5%;
+             Padding-top: 3%;
+		}
 
-}
 
-nav img {
-	height: 120px;
-	margin: 3px;
-}
-
-nav a {
-	color: #233A80;
-	font-family: 'Circular Medium', sans-serif;
-	font-size: 14px;
-	text-align: center;
-	text-decoration: none;
-	padding: 7px;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-nav a:hover {
-	
-	color: black;
-}
-
-#nav-list {
-}
-
-#contact-link {
-	margin-left: 35px;
-}
-
-#about-link {
-	margin-left: 35px;
-}
-.carousel-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .carousel-slide {
-      width: 500%;
-      height: 100%;
-      display: flex;
-    }
-    
-    .carousel-image {
-      width: 20%;
-      height: 100%;
-      flex-shrink: 0;
-      transition: transform 0.5s ease;
-    }
-    
-    .carousel-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-.intro {
-	Margin-top: 3%;
-        Margin-bottom: 5%;
-	padding-left:17%;
-	padding-right:17%;
-	line-height: 1.2;
-	font-size: 22px;
-	color: #233A80;
-}
-/* Style for banner image */
-.banner {
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-
-	padding-left:12%;
-	padding-right:12%;
-}
-
-#book-link {
-	background-color: #233A80;
-	color: white;
-	margin-right: 2%;
-	Padding: 15px;
-}
-.content {
-        display: flex;
-	padding-left:15.5%;
-	padding-right:15%;
-	
-}
-
-#content-section-2 {
-Margin-top: 3%;
-}
-
-.text-column {
-  flex: 2;
-  padding: 20px;
-  Margin-right:60px;
-}
-.text-column-2 {
-  flex: 2;
-  padding: 20px;
-  Padding-left: 115px;
-}
-
-.image-column {
-  flex: 1;
-  padding: 20px;
-  Margin-right: -7%;
-}
-
-.image-column img {
-  width: 400px;
-  height: auto;
-}
-#right-img {
-  Margin-left: -10%;
-}
 
 @media screen and (max-width: 600px) {
-/* Styles for screens with a maximum width of 600px */
-.banner img {
-}
+  /* Styles for screens with a maximum width of 600px */
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+  .banner img {
+    margin-top: -22%;
+  }
 
+  #left-text-1 {
+    padding-right: 0;
+  }
 
-}
+  .content {
+    Margin-top:-35%;
+  }
 
-#visit-text {
-	text-align: center;
-}
-#foot-right {
-	text-align: right;
-}
-.location-div {
-	text-align: center;
-}
-.hours-div {
-	text-align: center;
-}
-.contact-div {	text-align: center;
-}
+  .content-section {
+    flex-direction: column;
+    margin: 5% ;
+  }
+  .left-section, .right-section {
+    width: 100%;
+    padding: 0;
+  }
 
-
-
-
-    .footer {
-      background-color: #233A80;
-      color: #fff;
-      padding: 20px;
-      Padding-left: 17%;
-      Padding-right: 17%;
-      Margin-top: 2%;
-    }
+  #right-text {
+    padding-left: 0;
+  }
     
-    .footer-columns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-    
-    .footer-column {
-      flex-basis: 33.33%;
-      margin-bottom: 10px;
+  #footer-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-      align-items: flex-start; 
-    }
-    
-    .footer-link {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    .footer-link:hover {
-      text-decoration: underline;
-    }
-    .social-icon {
-	width: 50px;
-	padding: 15px;
-    }
+  #footer-logo {
+    width: 50%;
+    padding-bottom: 5%;
+    Padding-top: 5%;
+  }
+}
+
+       
 </style>
 </head>
 <body>
 
-<!-- Navigation bar -->
-<nav>
-	<a href="index.htm"><img src="images/grecos logo 2.png" alt="Logo"></a>
-	<div id="nav-list">
-		<a href="story.html" id="services-link">STORY</a>
-		<a href="offerings.html" id="about-link">OFFERINGS</a>
-		<a href="team.html" id="about-link">TEAM</a>
-		<a href="contact.html" id="contact-link">CONTACT</a>
+	<!-- Navigation bar -->
+	<nav>
+		<a href="index.htm"><img src="grecos-logo-2.png" alt="Logo"></a>
+		<div id="nav-list">
+			<a href="story.html" id="story-link">Story</a>
+			<a href="offerings.html" id="offerings-link">Offerings</a>
+			<a href="team.html" id="team-link">Team</a>
+            <a href="contact.html" id="contact-link">Contact</a>
+		</div>
+        <a href="mailto:grecos@shaw.ca" id="email-button">Email Us</a>
+	</nav>
+    
+	<!-- Banner image -->
+   
+	<section class="banner">
+  		<img src="team-banner-1.png" alt="Banner Image">
+	</section>
+   
+    
+    <!-- Intro Section -->
+    <div class="intro">
+    <h2 class="intro-text" style="font-family: Times Now">Welcome to Greco's Specialty Foods: a cherished culinary legacy and your destination for exceptionally sourced ingredients.</h2>
+    			
+    </div>
+	<!-- Content section 1 -->
+	<div class="content">
+	<div class="content-section" id="content-block-1">
+	<div class="left-section" id="left-text-1">
+    			<h2 class="content-header">Meet Our Team</h2>
+                <p>At Greco's, we have a dedicated team of food enthusiasts who are ready to assist you on your culinary journey. Led by owners Chris Duxbury and Fritz Rekla, our team shares a love for authentic European specialty foods. With their guidance, our knowledgeable and friendly team is here to provide exceptional service and ensure your experience at Greco's is memorable. Whether you're seeking advice or personalized assistance, our team is committed to going above and beyond to meet your needs.</p>
+
+  		</div>
+  		<div class="right-section">
+    			<img src="team-img-1.png"alt="Image 1">
+  		</div>
 	</div>
-<a href="contact.html" id="book-link">EMAIL US</a>
-</nav>
 
-<!-- Banner image -->
-<section class="banner">
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <div class="carousel-image">
-        <img src="images/banner-img-1.png" alt="Image 1">
-      </div>
-      <div class="carousel-image">
-        <img src="images/banner-2c.png" alt="Image 2">
-      </div>
-      <div class="carousel-image">
-        <img src="images/banner-3c.png" alt="Image 3">
-      </div>
-    </div>
-  </div>
-</section>
-<div class="intro">
-	<h1>We are a team of passionate food enthusiasts and culinary experts devoted to curating the finest international delicacies and delivering exceptional expertise and service.</h1>
-</div>
-<!-- Content section 1 -->
-<div class="content">
-  <div class="text-column">
-    <h2>Meet Our Passionate Team</h2>
-    
-    	<p>At Greco's, we have a dedicated team of food enthusiasts who are ready to assist you on your culinary journey. Led by owners Chris Duxbury and Fritz Rekla, our team shares a love for authentic European specialty foods.
-
-With their guidance, our knowledgeable and friendly team is here to provide exceptional service and ensure your experience at Greco's is memorable. Whether you're seeking advice or personalized assistance, our team is committed to going above and beyond to meet your needs.</p>
-
-  </div>
-  <div class="image-column">
-    <img src="images/DSC09342-scaled.jpg" alt="Image">
-  </div>
 </div>
 
-<div class="footer">
-    <h2 class="footer-text">Contact Us</h2>
-    <div class="footer-columns">
-    <div class="footer-column">
-	<a href="https://goo.gl/maps/bA3NJmtNWskH66kT8" class="footer-link">6886 King George Blvd<br>Surrey, BC, Canada<br>V3W4Z9</a>
-<p>(604) 590-1644</p>
-    </div>
-    <div class="footer-column">
-        <p class="hours"> Monday - Saturday: 9am-5pm<br>Sunday: 10am–5pm</p>
-    </div>
-    <div class="footer-column">
-        <p class="email"> Email Us</p>
-    </div>
-    <div class="footer-column">
-	<a href="https://www.instagram.com/grecosspecialtyfoodmarket/"><img src="images/icon-ig.png" alt="Icon" class="social-icon"></a>
-	<a href="https://www.yelp.com/biz/grecos-specialty-foods-surrey-2?hrid=7RDVHNFAsZLUo1n_i_Qpdg&rh_type=phrase&rh_ident=balsamic_vinegar"><img src="images/icon-yelp.png" alt="Icon" class="social-icon"></a>
-	<a href="https://www.facebook.com/grecosspecialtyfoods"><img src="images/icon-fb.png" alt="Icon" class="social-icon"></a>
-    </div>
-  </div>
 </body>
+<footer>
+  <div class="column">
+      <img src="grecos-logo-2.png"alt="Logo" id="footer-logo">
+<p>© 2023 Greco's Specialty Foods</p>
+    </div>
 
+    <div class="column" id="footer-center-column">
+      <h2 class="footer-header">Hours</h2>
+      <p>Monday - Saturday:<br>
+        9 am - 5 pm
+        <br><br>
+        Sunday:<br>
+        10 am - 5 pm</p>
+    </div>
 
-
-  <script>
-    const carouselSlide = document.querySelector('.carousel-slide');
-    const carouselImages = document.querySelectorAll('.carousel-image');
-    const imageWidth = carouselImages[0].clientWidth;
-    let counter = 0;
-    
-    function slideNext() {
-      if (counter >= carouselImages.length - 1) {
-        carouselSlide.style.transition = 'none';
-        counter = carouselImages.length - 1;
-        carouselSlide.style.transform = `translateX(${-imageWidth * counter}px)`;
-        setTimeout(() => {
-          counter = 0;
-          carouselSlide.style.transition = 'transform 0.5s ease';
-          carouselSlide.style.transform = `translateX(0)`;
-        }, 3000);
-      } else {
-        counter++;
-        carouselSlide.style.transition = 'transform 0.5s ease';
-        carouselSlide.style.transform = `translateX(${-imageWidth * counter}px)`;
-      }
-    }
-    
-    setInterval(slideNext, 3000);
-  </script>
-</html>
+    <div class="column">
+      <h2 class="footer-header">Contact Us</h2>
+      <p>Address:<br> 6886 King George Blvd, Surrey, BC V3W 4Z9 
+                <br><br>
+                Phone:<br> (604) 590-1644 
+                <br><br>
+                Email:<br> grecos@shaw.ca</p>
+    </div>  
+</footer>

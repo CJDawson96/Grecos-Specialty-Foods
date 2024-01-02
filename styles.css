@@ -1,0 +1,226 @@
+<style>
+		/* Style for fonts */
+		@font-face {
+            font-family: 'Circular Book';
+      			src: url('Circular/CircularStd-Book.otf') format('woff2'),
+           		url('Circular/CircularStd-Book.otf') format('otf');
+      			font-family: 'Times Now';
+      			src: url('Times Now/TimesNow-ExtraLight.woff') format('woff2'),
+           		url('Times Now/TimesNow-ExtraLight.woff') format('woff2');
+
+
+    		}
+		/* Style for navigation bar */
+		nav {
+    			background-color: white;
+    			overflow: hidden;
+    			display: flex;
+    			justify-content: space-between;
+    			align-items: center;
+                padding-bottom: 3vh;
+                margin-left: 10%;
+                margin-right: 10%;
+		}
+
+		nav img {
+			height: 150px;
+			margin: 7px;
+		}
+
+		nav a {
+			color: black;
+			text-align: left;
+			text-decoration: none;
+			padding-top: 7px;
+            padding-bottom: 7px;
+			padding-left: 10px;
+			padding-right: 10px;
+            
+		}
+
+		nav a:hover {
+			background-color:#E5E4E2;
+			color: black;
+		}
+
+		#nav-list {
+			margin-right: 15px;
+		}
+        #email-button {
+            background-color: #2A3566;
+            color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        #offerings-link {
+			margin-left: 35px;
+		}
+		#contact-link {
+			margin-left: 35px;
+		}
+
+		#team-link {
+			margin-left: 35px;
+		}
+        
+		/* Style for banner image */
+		.banner {
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			height: 300px; /* set the height of the section to a fixed value */
+		}
+		.banner img{
+			width: 100%;
+			margin-top:18%;
+		}
+        /* Style for intro section */
+		.intro {
+            width: 100%;
+            background-color: #2A3566;
+            padding-top:23%;
+            padding-bottom:5%;
+            color: white;
+		}
+        .intro-text {
+            padding-left: 12%;
+            padding-right: 20%;
+            color: white;
+        }
+		/* Style for content sections */
+		#content-block-1 {
+			margin-top: 5%;
+		}
+		.content-section {
+  			display: flex;
+  			justify-content: space-between;
+  			align-items: center;
+			margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 12%;
+            margin-right: 12%;
+
+		}
+        .content-header {
+            font-family: Times Now;
+            color: #2A3566;
+        }
+          .footer-header {
+            font-family: Times Now;
+            color: white;
+        }
+
+		.left-section {
+  			width: 40%;
+			padding-right: 10%;
+		}
+
+		.right-section {
+  			width: 50%;
+		}
+	
+		.right-section img {
+  			width: 100%;
+  			height: auto;
+		}
+	
+		#right-text {
+			padding-left: 3%;
+		}
+
+		#left-text-1 {
+			padding-right:13.5%;
+		}
+		.content-section h2 {
+			margin-top: 0;
+		}
+
+		.content-section .content-text {
+			width: 50%;
+			margin-right: 0px;
+		}
+        .column {
+      width: 30%;
+      display: inline-block;
+      vertical-align: top;
+    }
+        #footer-center-column {
+            padding-left: 2%;
+        }
+         h2 {
+            font-size: 2.75vw;
+        }
+		body {
+			background-color: white;
+			margin: 0;
+			font-family: 'Circular Book', sans-serif;
+		}
+		
+		footer {
+            background-color: #2A3566;
+            color: white;
+            padding-top: 3%;
+            padding-bottom: 4%;
+            padding-left: 12%;
+            
+		}
+		#footer-text {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		#footer-logo {
+			width: 40%;
+			padding-bottom: 5%;
+             Padding-top: 3%;
+		}
+
+
+
+@media screen and (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px */
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+  .banner img {
+    margin-top: -22%;
+  }
+
+  #left-text-1 {
+    padding-right: 0;
+  }
+
+  .content {
+    Margin-top:-35%;
+  }
+
+  .content-section {
+    flex-direction: column;
+    margin: 5% ;
+  }
+  .left-section, .right-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  #right-text {
+    padding-left: 0;
+  }
+    
+  #footer-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #footer-logo {
+    width: 50%;
+    padding-bottom: 5%;
+    Padding-top: 5%;
+  }
+}
+
+       
+</style>
