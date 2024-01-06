@@ -64,6 +64,7 @@
 		}
 		#contact-link {
 			margin-left: 35px;
+            margin-right: 50px;
 		}
 
 		#team-link {
@@ -180,11 +181,27 @@
 			padding-bottom: 5%;
              Padding-top: 3%;
 		}
+        /* Add these styles for the hamburger menu */
+.hamburger-menu {
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Initially hide the hamburger menu on larger screens */
+}
 
 
 
 @media screen and (max-width: 600px) {
   /* Styles for screens with a maximum width of 600px */
+    .hamburger-menu {
+       display: block;
+        text-align: right;
+        position: absolute;
+        transform: translateY(100%);
+        top: 0;
+        right: 0;
+        padding: 15px; /* Adjust padding for better spacing */
+        cursor: pointer;
+    }
     .column {
         width: 100%;
         display: block;
@@ -199,12 +216,13 @@
   }
 
   .content {
-    Margin-top:-35%;
+      
   }
 
   .content-section {
     flex-direction: column;
     margin: 5% ;
+    padding-top: 5%;    
   }
   .left-section, .right-section {
     width: 100%;
@@ -214,7 +232,6 @@
   #right-text {
     padding-left: 0;
   }
-    
   #footer-text {
     margin-left: 0;
     margin-right: 0;
@@ -225,6 +242,66 @@
     padding-bottom: 5%;
     Padding-top: 5%;
   }
+    .intro {
+         margin-top:-22%;
+        }
+    .intro-text {
+         font-size: 5vw;
+         margin-top: -15%;
+         margin-left: -7%;
+         margin-right: -15%;
+        }
+    #index-header3 {
+        margin-top: 10%;
+    }
+    nav img {
+			height: 125px;
+			margin: 0px;
+		}
+   nav {
+       margin-left: 3%;
+       margin-right: 3%;
+       margin-bottom:-3%;
+		}
+
+
+		nav a {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 15px;
+            padding-right: 15px;
+       padding-top: 5%;
+            padding-bottom: 5%;
+    }
+    #nav-list {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        text-align: right;
+        padding-top: 60px;
+    }
+    
+		#offerings-link {
+			margin-left: 0px;
+		}
+		#contact-link {
+			margin-left: 0px;
+            margin-right: 0px;
+		}
+
+		#team-link {
+			margin-left: 0px;
+		}
+       h2 {
+            font-size: 5vw;
+        }
+        
+    
 }
 
        
@@ -240,8 +317,11 @@
 			<a href="offerings.html" id="offerings-link">Offerings</a>
 			<a href="team.html" id="team-link">Team</a>
             <a href="contact.html" id="contact-link">Contact</a>
-		</div>
+            
         <a href="mailto:grecos@shaw.ca" id="email-button">Email Us</a>
+		</div>
+        
+         <div class="hamburger-menu">&#9776;</div> <!-- Add this line for the hamburger menu -->
 	</nav>
     
 	<!-- Banner image -->
@@ -279,7 +359,7 @@
     			<img src="index-img-2.png"alt="Image 1">
   		</div>
 	<div class="left-section" id="right-text">
-    			<h2 class="content-header">Artisanal Charceuterie & More</h2>
+    			<h2 class="content-header" id="index-header3">Artisanal Charceuterie & More</h2>
     			<p>At Greco's, we take joy in offering a diverse array of gourmet delights. From meticulously curated specialty products to artisanal cheeses sourced globally, our passion is evident in every bite. Explore the art of indulgence with custom charcuterie platters, expertly crafted to harmonize flavors. Share the joy of exceptional tastes with our thoughtfully assembled gift baskets. 
                 <br><br>
                 Join us in Surrey, BC, for a brief escape where relaxation meets culinary adventure. Welcome to Greco's – where passion and palate unite for a memorable experience.</p>
@@ -334,5 +414,15 @@
                 Email:<br> grecos@shaw.ca</p>
     </div>  
 </footer>
+    
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navList = document.getElementById('nav-list');
 
-
+        hamburgerMenu.addEventListener('click', function () {
+            navList.style.display = (navList.style.display === 'block' ? 'none' : 'block');
+        });
+    });
+</script>
