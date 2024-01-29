@@ -165,7 +165,6 @@
       width: 50%;
       margin: auto;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     
     }
 
@@ -190,9 +189,10 @@
       margin-right: 12%;
       font-size: 24px;
       cursor: pointer;
+      background-color: transparent;
       color: black;
       border: none;
-        
+      
       border-radius: 50%;
     }
 
@@ -232,6 +232,13 @@
 
 @media screen and (max-width: 600px) {
   /* Styles for screens with a maximum width of 600px */
+    .slider-container {
+      width: 90%;
+    }
+    .slide-btn {
+      margin-top: -35%;
+      color: white;
+    }
     .hamburger-menu {
        display: block;
         text-align: right;
