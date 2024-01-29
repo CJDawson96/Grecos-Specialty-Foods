@@ -229,12 +229,19 @@
     cursor: pointer;
     display: none; /* Initially hide the hamburger menu on larger screens */
 }
+        .gallery-tag {
+             text-align: center;
+            font-size: 14px;
+        }
 
 
 @media screen and (max-width: 600px) {
   /* Styles for screens with a maximum width of 600px */
     #gallery-header {
             text-align: left;
+        }
+    .gallery-tag {
+             text-align: left;
         }
     .slider-container {
       width: 90%;
@@ -435,11 +442,11 @@
      <div class="slider-container">
          <h2 class="content-header" id="gallery-header">Platters and Gift Bakets</h2>
     <div class="slides">
-      <div class="slide"><img src="offerings-gallery-1.png" alt="Offerings Gallery 1"></div>
-      <div class="slide"><img src="offerings-gallery-2.png" alt="Offerings Gallery 2"></div>
-      <div class="slide"><img src="offerings-gallery-3.png" alt="Offerings Gallery 3"></div>
-      <div class="slide"><img src="offerings-gallery-4.png" alt="Offerings Gallery 4"></div>
-      <div class="slide"><img src="offerings-gallery-6.png" alt="Offerings Gallery 6"></div>
+      <div class="slide"><img src="offerings-gallery-1.png" alt="Offerings Gallery 1"><p class="gallery-tag">Custom Charceuterie Board</p></div>
+      <div class="slide"><img src="offerings-gallery-2.png" alt="Offerings Gallery 2"><p class="gallery-tag">Personalized Gift Basket</p></div>
+      <div class="slide"><img src="offerings-gallery-3.png" alt="Offerings Gallery 3"><p class="gallery-tag">Custom Charceuterie Board</p></div>
+      <div class="slide"><img src="offerings-gallery-4.png" alt="Offerings Gallery 4"><p class="gallery-tag">Custom Charceuterie Board</p></div>
+      <div class="slide"><img src="offerings-gallery-6.png" alt="Offerings Gallery 6"><p class="gallery-tag">Personalized Gift Basket</p></div>
       <!-- Add more slides as needed -->
     </div>
 
