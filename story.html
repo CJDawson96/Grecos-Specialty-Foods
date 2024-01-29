@@ -165,7 +165,6 @@
       width: 50%;
       margin: auto;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     
     }
 
@@ -190,9 +189,10 @@
       margin-right: 12%;
       font-size: 24px;
       cursor: pointer;
+      background-color: transparent;
       color: black;
       border: none;
-        
+      
       border-radius: 50%;
     }
 
@@ -232,6 +232,13 @@
 
 @media screen and (max-width: 600px) {
   /* Styles for screens with a maximum width of 600px */
+    .slider-container {
+      width: 90%;
+    }
+    .slide-btn {
+      margin-top: -35%;
+      color: white;
+    }
     .hamburger-menu {
        display: block;
         text-align: right;
@@ -300,8 +307,8 @@
     }
     nav img {
         height: 100px;
-        width: 100px;
-        margin: 0px;
+	   width: 100px;
+			margin: 0px;
 		}
    nav {
        margin-left: 3%;
@@ -371,7 +378,7 @@
 	<!-- Banner image -->
    
 	<section class="banner">
-  		<img src="story-banner-1.png" alt="Banner Image">
+  		<img src="story-banner-short.png" alt="Banner Image">
 	</section>
    
     
